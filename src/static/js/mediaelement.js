@@ -1,4 +1,6 @@
-document.addEventListener('DOMContentLoaded', function () {
+
+
+function initMediaElement(onSuccessCallback) {
 
 	var mediaElements = document.querySelectorAll('#player1'), i, total = mediaElements.length;
 
@@ -20,6 +22,7 @@ document.addEventListener('DOMContentLoaded', function () {
 						renderer.querySelector('.renderer').innerHTML = media.rendererName;
 						renderer.querySelector('.error').innerHTML = '';
 					}
+					onSuccessCallback(media);
 				});
 				media.addEventListener('error', function (e) {
 					renderer.querySelector('.error').innerHTML = '<strong>Error</strong>: ' + e.message;
@@ -27,4 +30,4 @@ document.addEventListener('DOMContentLoaded', function () {
 			}
 		});
 	}
-});
+}

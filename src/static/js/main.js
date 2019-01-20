@@ -300,11 +300,15 @@ $(document).ready(function () {
 	});
 	playButton.add(mobilePlayButton).add($('.video-modal-close')).click( function() {
 		if($(this).is(playButton) || $(this).is(mobilePlayButton)) {
-			videoModal.addClass('active');
 
-			// play media element
-			videoModalPlayPauseButton.children().eq(0).click();
-			_paq.push(['trackEvent', 'Video', 'Play', 'Intro']);
+			initMediaElement(function(media){
+				videoModal.addClass('active');
+				// play media element
+				media.play();
+				_paq.push(['trackEvent', 'Video', 'Play', 'Intro']);
+			});
+
+
 			return false;
 		}
 		if($(this).is($('.video-modal-close'))) {
