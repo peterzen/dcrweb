@@ -3458,7 +3458,7 @@ html[dir="rtl"] .lang-menu {
   padding-top: 38px;
 }
 
-.subpage-content.press {
+.subpage-content.news {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -5065,7 +5065,7 @@ html[dir="rtl"] .lang-menu {
     margin-top: 30px;
     margin-bottom: 30px;
   }
-  .subpage-content.press {
+  .subpage-content.news {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -5693,7 +5693,7 @@ html[dir="rtl"] .lang-menu {
     margin-top: 20px;
     margin-bottom: 20px;
   }
-  .subpage-content.press {
+  .subpage-content.news {
     -webkit-box-pack: center;
     -webkit-justify-content: center;
     -ms-flex-pack: center;
@@ -6077,7 +6077,7 @@ html[dir="rtl"] .lang-menu {
     -ms-flex: 0 0 auto;
     flex: 0 0 auto;
   }
-  .subpage-content.press {
+  .subpage-content.news {
     -webkit-align-content: flex-end;
     -ms-flex-line-pack: end;
     align-content: flex-end;
@@ -6514,11 +6514,9 @@ html[dir="rtl"] .lang-menu {
 }
 
 .press__releases-content {
-  display: none;
   width: 100%;
   color: #000;
   clear: both;
-  width: 100%;
   margin: 0;
   background: #fff;
   padding-bottom: 50px;
@@ -6526,7 +6524,7 @@ html[dir="rtl"] .lang-menu {
 }
 
 .press__releases-content-wrapper {
-  max-width: 460px;
+  /*max-width: 460px;*/
   padding: 0 20px;
 }
 
@@ -6596,7 +6594,7 @@ html[dir="rtl"] .lang-menu {
 
 .subpage__toggle a {
   color: #596D81;
-  padding: 10px 30px;
+  padding: 10px 20px;
   display: inline-block;
   margin-right: -1px;
 }
