@@ -6,11 +6,9 @@
         <!--  template       news-community/list.html</>-->
         <div class="subpage-content-section">
             <div class="subpage-content news">
-
-
                 {{ range .Paginator.Pages }}
                 <div class="press__coverage-item press__releases-item">
-                    <img class="press__coverage-icon" src="/images/press-release-icon.svg" width="30" alt=""/>
+                    <img class="press__coverage-icon" src="/images/news-icons/news-community.svg" width="30" alt=""/>
 
                     <div class="press__coverage-wrapper">
                         <p><span class="press__title"><a href="{{ .Permalink }}">{{ .Params.title }}</a></span></p>
